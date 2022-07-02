@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Models\Balance;
+use App\Models\Historic;
+use App\Models\User;
+use App\Http\Requests\MoneyValidationFormRequest;
 
 class BalanceController extends Controller
 {

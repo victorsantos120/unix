@@ -18,7 +18,7 @@ Route::group(['middleware' => 'auth'], function () {
         return view('home');
     })->name('home');
 
-    Route::post('deposit', [App\Http\Controllers\BalanceController::class, 'store'])->name('deposit.store');       
+    Route::post('deposit', [App\Http\Controllers\BalanceController::class, 'depositStore'])->name('deposit.store');       
     Route::get('deposit', [App\Http\Controllers\BalanceController::class, 'deposit'])->name('balance.deposit');       
     Route::get('balance', [App\Http\Controllers\BalanceController::class, 'index'])->name('admin.balance'); 
     
